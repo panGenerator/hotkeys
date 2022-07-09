@@ -1,0 +1,28 @@
+{
+  "name": "hotkeys",
+  "private": false,
+  "version": "0.0.1",
+  "author": "panGenerator <contact@pangenerator.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/hotkeys.es.js",
+      "require": "./dist/hotkeys.cjs.js"
+    }
+  },
+  "main": "./dist/hotkeys.cjs.js",
+  "module": "./dist/hotkeys.es.js",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:watch": "vite build --watch"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panGenerator/hotkeys.git"
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotkeys Test</title>
+</head>
+<body>
+  <script type="module" src="/src/hotkeys.js"></script>
+  <script type="module">
+    import Hotkeys from './src/hotkeys.js'
+      const hotkeys = new Hotkeys([
+        { key: 'ArrowUp', meta: true, description: 'Fired when Command + Arrow Up is pressed', callback: () => { console.log('UP')} },
+        { key: 'ArrowDown', ctrl: true, description: 'Fired when Control + Arrow Down is pressed', callback: () => { console.log('DOWN') } },
+        { key: 'ArrowLeft', shift: true, description: 'Fired when Shift + Arrow Left is pressed', callback: () => { console.log('LEFT') } },
+        { key: 'ArrowRight', alt: true, description: 'Fired when Alt/Option + Arrow Right is pressed', callback: () => { console.log('RIGHT') } },
+        { key: 'Backspace', meta: true, alt: true, description: 'Fired when Command + Alt/Option + Backspace is pressed', callback: () => { console.log('BACKSPACE') } },
+        { key: '2', description: `Fired when '2' is pressed"`, callback: () => { console.log('2') }},
+        { key: '3', description: `Fired when '3' is pressed"`, callback: () => { console.log('3') }},
+        { key: 'F', description: `Fired when 'F' is pressed"`, callback: () => { console.log('F') }},
+        { key: 'N', description: `Fired when 'N' is pressed"`, callback: () => { console.log('N') }},
+        { key: 'O', description: `Fired when 'O' is pressed"`, callback: () => { console.log('O') }},
+        { key: 'R', description: `Fired when 'R' is pressed"`, callback: () => { console.log('R') }},
+        { key: 'D', description: `Fired when 'D' is pressed"`, callback: () => { console.log('D') }},
+      ])
+  </script>
+  <input type="text" id="keyboard" /><br/>
+  <textarea id="log" rows="10" cols="50"></textarea>
+</body>
+</html>
