@@ -1,7 +1,7 @@
 {
   "name": "hotkeys",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "panGenerator <contact@pangenerator.com>",
   "license": "MIT",
   "exports": {
@@ -12,7 +12,9 @@
   },
   "main": "./dist/hotkeys.cjs.js",
   "module": "./dist/hotkeys.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
