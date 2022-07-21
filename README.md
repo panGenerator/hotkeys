@@ -7,13 +7,13 @@ Used in various interactive installations
 ### Install the library
 
 ```bash
-npm install @panGenerator/hotkeys
+npm install @pangenerator/hotkeys
 ```
 
 ### Import the library
 
 ```js
-import Hotkeys from '@panGenerator/hotkeys'
+import Hotkeys from '@pangenerator/hotkeys'
 ```
 
 ### Configure keys
