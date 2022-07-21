@@ -1,7 +1,7 @@
 {
   "name": "@pangenerator/hotkeys",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "panGenerator <contact@pangenerator.com>",
   "license": "MIT",
   "exports": {
